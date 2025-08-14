@@ -11,7 +11,8 @@ public class Carta {
     }
 
     public String imagePath(){
-       return "classic-cards/" + numero + naipe + ".png"; 
+        String[] prefixo = ["0", "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"];
+        return "classic-cards/" + prefixo[numero] + naipe + ".png"; 
     }
 
     public int getNumero() {
@@ -21,7 +22,6 @@ public class Carta {
     public Naipe getNaipe() {
         return naipe;
     }
-    
     
 
 }

@@ -4,10 +4,7 @@ public class Computador extends Jogador {
 
     @Override
     public boolean parou(){
-        if (getPontos()> 16){
-            return true;
-        }else{
-            return false;
-        }
+        return getPontos() > 16;
+    
     }
 }
